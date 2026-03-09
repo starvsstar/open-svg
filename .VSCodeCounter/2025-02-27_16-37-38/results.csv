@@ -1,0 +1,181 @@
+"filename", "language", "JavaScript", "JSON with Comments", "TypeScript", "JSON", "XML", "Markdown", "Properties", "TypeScript JSX", "Ignore", "CSS", "Java", "comment", "blank", "total"
+"h:\cursor\for_fun\genarate-svg - vercel\.dockerignore", "Ignore", 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5
+"h:\cursor\for_fun\genarate-svg - vercel\.env", "Properties", 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 7, 3, 19
+"h:\cursor\for_fun\genarate-svg - vercel\.eslintrc.json", "JSON with Comments", 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25
+"h:\cursor\for_fun\genarate-svg - vercel\README.md", "Markdown", 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 14, 37
+"h:\cursor\for_fun\genarate-svg - vercel\components.json", "JSON", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17
+"h:\cursor\for_fun\genarate-svg - vercel\next.config.js", "JavaScript", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 32
+"h:\cursor\for_fun\genarate-svg - vercel\next.config.ts", "TypeScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 8
+"h:\cursor\for_fun\genarate-svg - vercel\package-lock.json", "JSON", 0, 0, 0, 15002, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15003
+"h:\cursor\for_fun\genarate-svg - vercel\package.json", "JSON", 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 0, 0, 1, 101
+"h:\cursor\for_fun\genarate-svg - vercel\pom.xml", "XML", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"h:\cursor\for_fun\genarate-svg - vercel\postcss.config.mjs", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 9
+"h:\cursor\for_fun\genarate-svg - vercel\public\file.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\public\globe.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\public\logo.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\public\next.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\public\vercel.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\public\window.svg", "XML", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\src\app.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 11
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(auth)\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 7
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(auth)\login\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 481, 0, 0, 0, 19, 39, 539
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\community\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 501, 0, 0, 0, 11, 44, 556
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\dashboard\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 410, 0, 0, 0, 15, 27, 452
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\editor\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 4, 20
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 2, 5, 48
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\my-svgs\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 729, 0, 0, 0, 59, 65, 853
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\studio\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\studio\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 781, 0, 0, 0, 35, 55, 871
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\svg-editor\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 880, 0, 0, 0, 70, 94, 1044
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\403\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 7
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\admin\feedback\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 280, 0, 0, 0, 9, 25, 314
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\admin\svgs\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 375, 0, 0, 0, 9, 31, 415
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\admin-svg\[id]\route.ts", "TypeScript", 0, 0, 114, 0, 0, 0, 0, 0, 0, 0, 0, 106, 19, 239
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\admin-svg\route.ts", "TypeScript", 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 66, 13, 140
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\auth\[...nextauth]\route.ts", "TypeScript", 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\auth\admin\route.ts", "TypeScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\chat\clear\route.ts", "TypeScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 43, 4, 64
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\[id]\like\route.ts", "TypeScript", 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 0, 43, 10, 119
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\[id]\share\route.ts", "TypeScript", 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 37, 9, 93
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\route.ts", "TypeScript", 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 0, 50, 13, 169
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\dashboard\recent-edits\route.ts", "TypeScript", 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 24, 8, 86
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\dashboard\stats\route.ts", "TypeScript", 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 0, 47, 15, 187
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\debug\check-svg\[id]\route.ts", "TypeScript", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\feedback\[id]\route.ts", "TypeScript", 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 69, 9, 129
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\feedback\route.ts", "TypeScript", 0, 0, 144, 0, 0, 0, 0, 0, 0, 0, 0, 92, 27, 263
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\generate\route.ts", "TypeScript", 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 41, 20, 147
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\my-svgs\[id]\route.ts", "TypeScript", 0, 0, 111, 0, 0, 0, 0, 0, 0, 0, 0, 76, 14, 201
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\my-svgs\route.ts", "TypeScript", 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 0, 57, 14, 156
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\prompts\[id]\route.ts", "TypeScript", 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 87, 12, 174
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\prompts\route.ts", "TypeScript", 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 55, 8, 119
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\register\route.ts", "TypeScript", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 47, 11, 115
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\[id].ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\[id]\route.ts", "TypeScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 27, 8, 70
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\create.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\export\route.ts", "TypeScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 23, 3, 41
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\route.ts", "TypeScript", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 29, 3, 48
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\update.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\[id]\get\route.ts", "TypeScript", 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 31, 6, 78
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\[id]\route.ts", "TypeScript", 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 0, 117, 28, 305
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\official\route.ts", "TypeScript", 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 18, 7, 75
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\route.ts", "TypeScript", 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 0, 35, 9, 90
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\swagger\route.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\templates\random\route.ts", "TypeScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 19, 5, 39
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test-db\route.ts", "TypeScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\db\route.ts", "TypeScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 19
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\llm\route.ts", "TypeScript", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 31
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\route.ts", "TypeScript", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\showcase\route.ts", "TypeScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 25
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\avatar\route.ts", "TypeScript", 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 4, 11, 62
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\password\route.ts", "TypeScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 45
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\profile\route.ts", "TypeScript", 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 43
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\community\not-found.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 7
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\error\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 4, 30
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 0, 8, 26, 200
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 5, 42
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\not-found.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 7
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 468, 0, 0, 0, 28, 30, 526
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\pricing\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 207, 0, 0, 0, 5, 11, 223
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\providers.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 2, 8
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\settings\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 130, 0, 0, 0, 0, 10, 140
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\templates\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 564, 0, 0, 0, 14, 50, 628
+"h:\cursor\for_fun\genarate-svg - vercel\src\app\test\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 132, 0, 0, 0, 1, 14, 147
+"h:\cursor\for_fun\genarate-svg - vercel\src\auth.config.ts", "TypeScript", 0, 0, 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 100
+"h:\cursor\for_fun\genarate-svg - vercel\src\auth.ts", "TypeScript", 0, 0, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 108
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\AdminHeader.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 1, 20
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\AdminLayout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 1, 3, 16
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\FeedbackManagement.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 52, 0, 0, 0, 3, 5, 60
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\svgs\svg-list-item.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 2, 58
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\auth\admin-auth.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 0, 1, 8, 75
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\ai-chat.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 297, 0, 0, 0, 0, 33, 330
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\code-block.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 0, 4, 83
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\prompt-config.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 4, 43
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\Canvas.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 153, 0, 0, 0, 12, 25, 190
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\PropertyPanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 152, 0, 0, 0, 6, 7, 165
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\Toolbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 0, 9, 78
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\error-boundary.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 3, 23
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\feedback\FeedbackDialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 286, 0, 0, 0, 7, 29, 322
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 276, 0, 0, 0, 2, 19, 297
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\Sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 106, 0, 0, 0, 11, 7, 124
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\UserNav.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 266, 0, 0, 0, 3, 15, 284
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\providers\dialog-provider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 2, 13
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-editor\EditorTabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 284, 0, 0, 0, 23, 37, 344
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-export-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 274, 0, 0, 0, 18, 29, 321
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-preview-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 199, 0, 0, 0, 12, 16, 227
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-preview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 0, 4, 11, 72
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-showcase.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 106, 0, 0, 0, 3, 11, 120
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\svg\editor\CodeEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 4, 32
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\theme-provider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 2, 18
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\theme-toggle.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 4, 40
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\alert-dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 0, 0, 14, 138
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\alert.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 7, 60
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 6, 50
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\badge.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 6, 37
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 51, 0, 0, 0, 0, 6, 57
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\card.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 0, 0, 9, 80
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\checkbox.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 5, 31
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\custom-alert.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 4, 35
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 13, 122
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\dropdown-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 182, 0, 0, 0, 0, 18, 200
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\input.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 4, 23
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\label.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 6, 27
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\modal-alert.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 0, 4, 7, 101
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\pagination.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 111, 0, 0, 0, 0, 10, 121
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\popover.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 6, 31
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\radio-group.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 6, 45
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 5, 48
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\select.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 12, 121
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\separator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 4, 31
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\skeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 3, 16
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\slider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 4, 28
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\switch.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 0, 3, 37
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\table.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 107, 0, 0, 0, 0, 11, 118
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\tabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 48, 0, 0, 0, 0, 8, 56
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\textarea.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 5, 25
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\toast.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 12, 127
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\toaster.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 3, 38
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\tooltip.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 8, 31
+"h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\use-toast.ts", "TypeScript", 0, 0, 159, 0, 0, 0, 0, 0, 0, 0, 0, 2, 30, 191
+"h:\cursor\for_fun\genarate-svg - vercel\src\config\ai-models.ts", "TypeScript", 0, 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 46
+"h:\cursor\for_fun\genarate-svg - vercel\src\config\prompts.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 42
+"h:\cursor\for_fun\genarate-svg - vercel\src\config\site.ts", "TypeScript", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"h:\cursor\for_fun\genarate-svg - vercel\src\data\user.ts", "TypeScript", 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 44
+"h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-auth-guard.ts", "TypeScript", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 24
+"h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-media-query.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-svg.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 20
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth-utils.ts", "TypeScript", 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 39
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth.config.ts", "TypeScript", 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 27
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth.ts", "TypeScript", 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 69
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth\session.ts", "TypeScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\db-utils.ts", "TypeScript", 0, 0, 98, 0, 0, 0, 0, 0, 0, 0, 0, 6, 10, 114
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\db.ts", "TypeScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\db\schema.ts", "TypeScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\llm-config.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 16
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\logger.ts", "TypeScript", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 33
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\memory.ts", "TypeScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 24
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\prompt.ts", "TypeScript", 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 3, 7, 52
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\svg.ts", "TypeScript", 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 0, 6, 14, 93
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\user.ts", "TypeScript", 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 51
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\prisma.ts", "TypeScript", 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"h:\cursor\for_fun\genarate-svg - vercel\src\lib\utils.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"h:\cursor\for_fun\genarate-svg - vercel\src\main\java\config\SwaggerConfig.java", "Java", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 3, 33
+"h:\cursor\for_fun\genarate-svg - vercel\src\middleware.ts", "TypeScript", 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 0, 5, 10, 77
+"h:\cursor\for_fun\genarate-svg - vercel\src\pages\_app.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 2, 9
+"h:\cursor\for_fun\genarate-svg - vercel\src\pages\api-docs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 1, 4, 26
+"h:\cursor\for_fun\genarate-svg - vercel\src\pages\api\users.ts", "TypeScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 26, 1, 39
+"h:\cursor\for_fun\genarate-svg - vercel\src\providers\theme-provider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 5, 19
+"h:\cursor\for_fun\genarate-svg - vercel\src\routes\example.js", "JavaScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 2, 35
+"h:\cursor\for_fun\genarate-svg - vercel\src\schemas\index.ts", "TypeScript", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"h:\cursor\for_fun\genarate-svg - vercel\src\services\svg\generator.ts", "TypeScript", 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 17
+"h:\cursor\for_fun\genarate-svg - vercel\src\store\editor.ts", "TypeScript", 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 63
+"h:\cursor\for_fun\genarate-svg - vercel\src\styles\feedback-dialog.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 2, 18
+"h:\cursor\for_fun\genarate-svg - vercel\src\styles\swagger-ui.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 3
+"h:\cursor\for_fun\genarate-svg - vercel\src\swagger.js", "JavaScript", 510, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 512
+"h:\cursor\for_fun\genarate-svg - vercel\src\types\database.ts", "TypeScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 40
+"h:\cursor\for_fun\genarate-svg - vercel\src\types\environment.d.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"h:\cursor\for_fun\genarate-svg - vercel\src\types\next-auth.d.ts", "TypeScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"h:\cursor\for_fun\genarate-svg - vercel\src\types\svg.ts", "TypeScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"h:\cursor\for_fun\genarate-svg - vercel\tailwind.config.ts", "TypeScript", 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 80
+"h:\cursor\for_fun\genarate-svg - vercel\tsconfig.json", "JSON with Comments", 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 46
+"h:\cursor\for_fun\genarate-svg - vercel\types\next-auth.d.ts", "TypeScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 25
+"Total", "-", 556, 69, 3253, 15119, 16, 23, 9, 10719, 5, 185, 30, 1752, 1590, 33326

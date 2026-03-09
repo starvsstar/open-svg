@@ -1,0 +1,8 @@
+// 确保这些表的 svg_id 字段有索引
+model svg_tags {
+  // ...
+  svg_id String
+  @@index([svg_id])
+}
+
+// 应该为所有外键添加索引 

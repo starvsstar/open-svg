@@ -1,0 +1,334 @@
+Date : 2025-02-27 16:37:38
+Directory : h:\cursor\for_fun\genarate-svg - vercel
+Total : 179 files,  29984 codes, 1752 comments, 1590 blanks, all 33326 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |     15,119 |          0 |          2 |     15,121 |
+| TypeScript JSX     |         79 |     10,719 |        388 |      1,021 |     12,128 |
+| TypeScript         |         76 |      3,253 |      1,317 |        506 |      5,076 |
+| JavaScript         |          5 |        556 |         32 |         11 |        599 |
+| CSS                |          3 |        185 |          8 |         28 |        221 |
+| JSON with Comments |          2 |         69 |          0 |          2 |         71 |
+| Java               |          1 |         30 |          0 |          3 |         33 |
+| Markdown           |          1 |         23 |          0 |         14 |         37 |
+| XML                |          7 |         16 |          0 |          0 |         16 |
+| Properties         |          1 |          9 |          7 |          3 |         19 |
+| Ignore             |          1 |          5 |          0 |          0 |          5 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                 | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                    |        179 |     29,984 |      1,752 |      1,590 |     33,326 |
+| . (Files)                                                                            |         13 |     15,352 |         10 |         30 |     15,392 |
+| public                                                                               |          6 |          6 |          0 |          0 |          6 |
+| src                                                                                  |        159 |     14,604 |      1,742 |      1,557 |     17,903 |
+| src (Files)                                                                          |          5 |        771 |          7 |         30 |        808 |
+| src\app                                                                              |         63 |      8,163 |      1,532 |        865 |     10,560 |
+| src\app (Files)                                                                      |          5 |        684 |         36 |         63 |        783 |
+| src\app\(auth)                                                                       |          2 |        488 |         19 |         39 |        546 |
+| src\app\(auth) (Files)                                                               |          1 |          7 |          0 |          0 |          7 |
+| src\app\(auth)\login                                                                 |          1 |        481 |         19 |         39 |        539 |
+| src\app\(dashboard)                                                                  |          8 |      3,359 |        192 |        294 |      3,845 |
+| src\app\(dashboard) (Files)                                                          |          1 |         41 |          2 |          5 |         48 |
+| src\app\(dashboard)\community                                                        |          1 |        501 |         11 |         44 |        556 |
+| src\app\(dashboard)\dashboard                                                        |          1 |        410 |         15 |         27 |        452 |
+| src\app\(dashboard)\editor                                                           |          1 |         16 |          0 |          4 |         20 |
+| src\app\(dashboard)\my-svgs                                                          |          1 |        729 |         59 |         65 |        853 |
+| src\app\(dashboard)\studio                                                           |          2 |        782 |         35 |         55 |        872 |
+| src\app\(dashboard)\studio (Files)                                                   |          1 |        781 |         35 |         55 |        871 |
+| src\app\(dashboard)\studio\[id]                                                      |          1 |          1 |          0 |          0 |          1 |
+| src\app\(dashboard)\svg-editor                                                       |          1 |        880 |         70 |         94 |      1,044 |
+| src\app\403                                                                          |          1 |          7 |          0 |          0 |          7 |
+| src\app\admin                                                                        |          2 |        655 |         18 |         56 |        729 |
+| src\app\admin\feedback                                                               |          1 |        280 |          9 |         25 |        314 |
+| src\app\admin\svgs                                                                   |          1 |        375 |          9 |         31 |        415 |
+| src\app\api                                                                          |         39 |      1,904 |      1,247 |        324 |      3,475 |
+| src\app\api\admin-svg                                                                |          2 |        175 |        172 |         32 |        379 |
+| src\app\api\admin-svg (Files)                                                        |          1 |         61 |         66 |         13 |        140 |
+| src\app\api\admin-svg\[id]                                                           |          1 |        114 |        106 |         19 |        239 |
+| src\app\api\auth                                                                     |          2 |         21 |          0 |          5 |         26 |
+| src\app\api\auth\[...nextauth]                                                       |          1 |          2 |          0 |          1 |          3 |
+| src\app\api\auth\admin                                                               |          1 |         19 |          0 |          4 |         23 |
+| src\app\api\chat                                                                     |          1 |         17 |         43 |          4 |         64 |
+| src\app\api\chat\clear                                                               |          1 |         17 |         43 |          4 |         64 |
+| src\app\api\community                                                                |          3 |        219 |        130 |         32 |        381 |
+| src\app\api\community (Files)                                                        |          1 |        106 |         50 |         13 |        169 |
+| src\app\api\community\[id]                                                           |          2 |        113 |         80 |         19 |        212 |
+| src\app\api\community\[id]\like                                                      |          1 |         66 |         43 |         10 |        119 |
+| src\app\api\community\[id]\share                                                     |          1 |         47 |         37 |          9 |         93 |
+| src\app\api\dashboard                                                                |          2 |        179 |         71 |         23 |        273 |
+| src\app\api\dashboard\recent-edits                                                   |          1 |         54 |         24 |          8 |         86 |
+| src\app\api\dashboard\stats                                                          |          1 |        125 |         47 |         15 |        187 |
+| src\app\api\debug                                                                    |          1 |         20 |          0 |          2 |         22 |
+| src\app\api\debug\check-svg                                                          |          1 |         20 |          0 |          2 |         22 |
+| src\app\api\debug\check-svg\[id]                                                     |          1 |         20 |          0 |          2 |         22 |
+| src\app\api\feedback                                                                 |          2 |        195 |        161 |         36 |        392 |
+| src\app\api\feedback (Files)                                                         |          1 |        144 |         92 |         27 |        263 |
+| src\app\api\feedback\[id]                                                            |          1 |         51 |         69 |          9 |        129 |
+| src\app\api\generate                                                                 |          1 |         86 |         41 |         20 |        147 |
+| src\app\api\my-svgs                                                                  |          2 |        196 |        133 |         28 |        357 |
+| src\app\api\my-svgs (Files)                                                          |          1 |         85 |         57 |         14 |        156 |
+| src\app\api\my-svgs\[id]                                                             |          1 |        111 |         76 |         14 |        201 |
+| src\app\api\prompts                                                                  |          2 |        131 |        142 |         20 |        293 |
+| src\app\api\prompts (Files)                                                          |          1 |         56 |         55 |          8 |        119 |
+| src\app\api\prompts\[id]                                                             |          1 |         75 |         87 |         12 |        174 |
+| src\app\api\register                                                                 |          1 |         57 |         47 |         11 |        115 |
+| src\app\api\svg                                                                      |          6 |         66 |         79 |         18 |        163 |
+| src\app\api\svg (Files)                                                              |          4 |         16 |         29 |          7 |         52 |
+| src\app\api\svg\[id]                                                                 |          1 |         35 |         27 |          8 |         70 |
+| src\app\api\svg\export                                                               |          1 |         15 |         23 |          3 |         41 |
+| src\app\api\svgs                                                                     |          4 |        297 |        201 |         50 |        548 |
+| src\app\api\svgs (Files)                                                             |          1 |         46 |         35 |          9 |         90 |
+| src\app\api\svgs\[id]                                                                |          2 |        201 |        148 |         34 |        383 |
+| src\app\api\svgs\[id] (Files)                                                        |          1 |        160 |        117 |         28 |        305 |
+| src\app\api\svgs\[id]\get                                                            |          1 |         41 |         31 |          6 |         78 |
+| src\app\api\svgs\official                                                            |          1 |         50 |         18 |          7 |         75 |
+| src\app\api\swagger                                                                  |          1 |          5 |          0 |          1 |          6 |
+| src\app\api\templates                                                                |          1 |         15 |         19 |          5 |         39 |
+| src\app\api\templates\random                                                         |          1 |         15 |         19 |          5 |         39 |
+| src\app\api\test                                                                     |          4 |         82 |          4 |         12 |         98 |
+| src\app\api\test (Files)                                                             |          1 |         20 |          0 |          3 |         23 |
+| src\app\api\test-db                                                                  |          1 |         21 |          0 |          1 |         22 |
+| src\app\api\test\db                                                                  |          1 |         15 |          1 |          3 |         19 |
+| src\app\api\test\llm                                                                 |          1 |         25 |          2 |          4 |         31 |
+| src\app\api\test\showcase                                                            |          1 |         22 |          1 |          2 |         25 |
+| src\app\api\user                                                                     |          3 |        122 |          4 |         24 |        150 |
+| src\app\api\user\avatar                                                              |          1 |         47 |          4 |         11 |         62 |
+| src\app\api\user\password                                                            |          1 |         38 |          0 |          7 |         45 |
+| src\app\api\user\profile                                                             |          1 |         37 |          0 |          6 |         43 |
+| src\app\community                                                                    |          1 |          7 |          0 |          0 |          7 |
+| src\app\error                                                                        |          1 |         26 |          0 |          4 |         30 |
+| src\app\pricing                                                                      |          1 |        207 |          5 |         11 |        223 |
+| src\app\settings                                                                     |          1 |        130 |          0 |         10 |        140 |
+| src\app\templates                                                                    |          1 |        564 |         14 |         50 |        628 |
+| src\app\test                                                                         |          1 |        132 |          1 |         14 |        147 |
+| src\components                                                                       |         54 |      4,743 |        112 |        525 |      5,380 |
+| src\components (Files)                                                               |          7 |        708 |         37 |         76 |        821 |
+| src\components\admin                                                                 |          4 |        139 |          4 |         11 |        154 |
+| src\components\admin (Files)                                                         |          3 |         83 |          4 |          9 |         96 |
+| src\components\admin\svgs                                                            |          1 |         56 |          0 |          2 |         58 |
+| src\components\auth                                                                  |          1 |         66 |          1 |          8 |         75 |
+| src\components\chat                                                                  |          3 |        415 |          0 |         41 |        456 |
+| src\components\editor                                                                |          3 |        374 |         18 |         41 |        433 |
+| src\components\feedback                                                              |          1 |        286 |          7 |         29 |        322 |
+| src\components\layout                                                                |          3 |        648 |         16 |         41 |        705 |
+| src\components\providers                                                             |          1 |         11 |          0 |          2 |         13 |
+| src\components\svg                                                                   |          1 |         28 |          0 |          4 |         32 |
+| src\components\svg-editor                                                            |          1 |        284 |         23 |         37 |        344 |
+| src\components\svg\editor                                                            |          1 |         28 |          0 |          4 |         32 |
+| src\components\ui                                                                    |         29 |      1,784 |          6 |        235 |      2,025 |
+| src\config                                                                           |          3 |         89 |          0 |          9 |         98 |
+| src\data                                                                             |          1 |         42 |          0 |          2 |         44 |
+| src\hooks                                                                            |          3 |         48 |          2 |         11 |         61 |
+| src\lib                                                                              |         15 |        464 |         31 |         76 |        571 |
+| src\lib (Files)                                                                      |         10 |        294 |         18 |         45 |        357 |
+| src\lib\auth                                                                         |          1 |          4 |          0 |          1 |          5 |
+| src\lib\db                                                                           |          1 |         12 |          0 |          1 |         13 |
+| src\lib\models                                                                       |          3 |        154 |         13 |         29 |        196 |
+| src\main                                                                             |          1 |         30 |          0 |          3 |         33 |
+| src\main\java                                                                        |          1 |         30 |          0 |          3 |         33 |
+| src\main\java\config                                                                 |          1 |         30 |          0 |          3 |         33 |
+| src\pages                                                                            |          3 |         40 |         27 |          7 |         74 |
+| src\pages (Files)                                                                    |          2 |         28 |          1 |          6 |         35 |
+| src\pages\api                                                                        |          1 |         12 |         26 |          1 |         39 |
+| src\providers                                                                        |          1 |         14 |          0 |          5 |         19 |
+| src\routes                                                                           |          1 |          5 |         28 |          2 |         35 |
+| src\schemas                                                                          |          1 |         20 |          0 |          2 |         22 |
+| src\services                                                                         |          1 |         13 |          1 |          3 |         17 |
+| src\services\svg                                                                     |          1 |         13 |          1 |          3 |         17 |
+| src\store                                                                            |          1 |         56 |          0 |          7 |         63 |
+| src\styles                                                                           |          2 |         19 |          0 |          2 |         21 |
+| src\types                                                                            |          4 |         87 |          2 |          8 |         97 |
+| types                                                                                |          1 |         22 |          0 |          3 |         25 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                             | language           | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| h:\cursor\for_fun\genarate-svg - vercel\.dockerignore                                | Ignore             |          5 |          0 |          0 |          5 |
+| h:\cursor\for_fun\genarate-svg - vercel\.env                                         | Properties         |          9 |          7 |          3 |         19 |
+| h:\cursor\for_fun\genarate-svg - vercel\.eslintrc.json                               | JSON with Comments |         24 |          0 |          1 |         25 |
+| h:\cursor\for_fun\genarate-svg - vercel\README.md                                    | Markdown           |         23 |          0 |         14 |         37 |
+| h:\cursor\for_fun\genarate-svg - vercel\components.json                              | JSON               |         17 |          0 |          0 |         17 |
+| h:\cursor\for_fun\genarate-svg - vercel\next.config.js                               | JavaScript         |         29 |          1 |          2 |         32 |
+| h:\cursor\for_fun\genarate-svg - vercel\next.config.ts                               | TypeScript         |          4 |          1 |          3 |          8 |
+| h:\cursor\for_fun\genarate-svg - vercel\package-lock.json                            | JSON               |     15,002 |          0 |          1 |     15,003 |
+| h:\cursor\for_fun\genarate-svg - vercel\package.json                                 | JSON               |        100 |          0 |          1 |        101 |
+| h:\cursor\for_fun\genarate-svg - vercel\pom.xml                                      | XML                |         10 |          0 |          0 |         10 |
+| h:\cursor\for_fun\genarate-svg - vercel\postcss.config.mjs                           | JavaScript         |          6 |          1 |          2 |          9 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\file.svg                              | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\globe.svg                             | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\logo.svg                              | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\next.svg                              | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\vercel.svg                            | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\public\window.svg                            | XML                |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app.js                                   | JavaScript         |          6 |          2 |          3 |         11 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(auth)\layout.tsx                    | TypeScript JSX     |          7 |          0 |          0 |          7 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(auth)\login\page.tsx                | TypeScript JSX     |        481 |         19 |         39 |        539 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\community\page.tsx       | TypeScript JSX     |        501 |         11 |         44 |        556 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\dashboard\page.tsx       | TypeScript JSX     |        410 |         15 |         27 |        452 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\editor\page.tsx          | TypeScript JSX     |         16 |          0 |          4 |         20 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\layout.tsx               | TypeScript JSX     |         41 |          2 |          5 |         48 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\my-svgs\page.tsx         | TypeScript JSX     |        729 |         59 |         65 |        853 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\studio\[id]\page.tsx     | TypeScript JSX     |          1 |          0 |          0 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\studio\page.tsx          | TypeScript JSX     |        781 |         35 |         55 |        871 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\(dashboard)\svg-editor\page.tsx      | TypeScript JSX     |        880 |         70 |         94 |      1,044 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\403\page.tsx                         | TypeScript JSX     |          7 |          0 |          0 |          7 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\admin\feedback\page.tsx              | TypeScript JSX     |        280 |          9 |         25 |        314 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\admin\svgs\page.tsx                  | TypeScript JSX     |        375 |          9 |         31 |        415 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\admin-svg\[id]\route.ts          | TypeScript         |        114 |        106 |         19 |        239 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\admin-svg\route.ts               | TypeScript         |         61 |         66 |         13 |        140 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\auth\[...nextauth]\route.ts      | TypeScript         |          2 |          0 |          1 |          3 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\auth\admin\route.ts              | TypeScript         |         19 |          0 |          4 |         23 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\chat\clear\route.ts              | TypeScript         |         17 |         43 |          4 |         64 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\[id]\like\route.ts     | TypeScript         |         66 |         43 |         10 |        119 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\[id]\share\route.ts    | TypeScript         |         47 |         37 |          9 |         93 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\community\route.ts               | TypeScript         |        106 |         50 |         13 |        169 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\dashboard\recent-edits\route.ts  | TypeScript         |         54 |         24 |          8 |         86 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\dashboard\stats\route.ts         | TypeScript         |        125 |         47 |         15 |        187 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\debug\check-svg\[id]\route.ts    | TypeScript         |         20 |          0 |          2 |         22 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\feedback\[id]\route.ts           | TypeScript         |         51 |         69 |          9 |        129 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\feedback\route.ts                | TypeScript         |        144 |         92 |         27 |        263 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\generate\route.ts                | TypeScript         |         86 |         41 |         20 |        147 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\my-svgs\[id]\route.ts            | TypeScript         |        111 |         76 |         14 |        201 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\my-svgs\route.ts                 | TypeScript         |         85 |         57 |         14 |        156 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\prompts\[id]\route.ts            | TypeScript         |         75 |         87 |         12 |        174 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\prompts\route.ts                 | TypeScript         |         56 |         55 |          8 |        119 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\register\route.ts                | TypeScript         |         57 |         47 |         11 |        115 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\[id].ts                      | TypeScript         |          0 |          0 |          1 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\[id]\route.ts                | TypeScript         |         35 |         27 |          8 |         70 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\create.ts                    | TypeScript         |          0 |          0 |          1 |          1 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\export\route.ts              | TypeScript         |         15 |         23 |          3 |         41 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\route.ts                     | TypeScript         |         16 |         29 |          3 |         48 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svg\update.ts                    | TypeScript         |          0 |          0 |          2 |          2 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\[id]\get\route.ts           | TypeScript         |         41 |         31 |          6 |         78 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\[id]\route.ts               | TypeScript         |        160 |        117 |         28 |        305 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\official\route.ts           | TypeScript         |         50 |         18 |          7 |         75 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\svgs\route.ts                    | TypeScript         |         46 |         35 |          9 |         90 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\swagger\route.ts                 | TypeScript         |          5 |          0 |          1 |          6 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\templates\random\route.ts        | TypeScript         |         15 |         19 |          5 |         39 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test-db\route.ts                 | TypeScript         |         21 |          0 |          1 |         22 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\db\route.ts                 | TypeScript         |         15 |          1 |          3 |         19 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\llm\route.ts                | TypeScript         |         25 |          2 |          4 |         31 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\route.ts                    | TypeScript         |         20 |          0 |          3 |         23 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\test\showcase\route.ts           | TypeScript         |         22 |          1 |          2 |         25 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\avatar\route.ts             | TypeScript         |         47 |          4 |         11 |         62 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\password\route.ts           | TypeScript         |         38 |          0 |          7 |         45 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\api\user\profile\route.ts            | TypeScript         |         37 |          0 |          6 |         43 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\community\not-found.tsx              | TypeScript JSX     |          7 |          0 |          0 |          7 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\error\page.tsx                       | TypeScript JSX     |         26 |          0 |          4 |         30 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\globals.css                          | CSS                |        166 |          8 |         26 |        200 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\layout.tsx                           | TypeScript JSX     |         37 |          0 |          5 |         42 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\not-found.tsx                        | TypeScript JSX     |          7 |          0 |          0 |          7 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\page.tsx                             | TypeScript JSX     |        468 |         28 |         30 |        526 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\pricing\page.tsx                     | TypeScript JSX     |        207 |          5 |         11 |        223 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\providers.tsx                        | TypeScript JSX     |          6 |          0 |          2 |          8 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\settings\page.tsx                    | TypeScript JSX     |        130 |          0 |         10 |        140 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\templates\page.tsx                   | TypeScript JSX     |        564 |         14 |         50 |        628 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\app\test\page.tsx                        | TypeScript JSX     |        132 |          1 |         14 |        147 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\auth.config.ts                           | TypeScript         |         92 |          0 |          8 |        100 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\auth.ts                                  | TypeScript         |        101 |          0 |          7 |        108 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\AdminHeader.tsx         | TypeScript JSX     |         19 |          0 |          1 |         20 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\AdminLayout.tsx         | TypeScript JSX     |         12 |          1 |          3 |         16 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\FeedbackManagement.tsx  | TypeScript JSX     |         52 |          3 |          5 |         60 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\admin\svgs\svg-list-item.tsx  | TypeScript JSX     |         56 |          0 |          2 |         58 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\auth\admin-auth.tsx           | TypeScript JSX     |         66 |          1 |          8 |         75 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\ai-chat.tsx              | TypeScript JSX     |        297 |          0 |         33 |        330 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\code-block.tsx           | TypeScript JSX     |         79 |          0 |          4 |         83 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\chat\prompt-config.tsx        | TypeScript JSX     |         39 |          0 |          4 |         43 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\Canvas.tsx             | TypeScript JSX     |        153 |         12 |         25 |        190 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\PropertyPanel.tsx      | TypeScript JSX     |        152 |          6 |          7 |        165 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\editor\Toolbar.tsx            | TypeScript JSX     |         69 |          0 |          9 |         78 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\error-boundary.tsx            | TypeScript JSX     |         20 |          0 |          3 |         23 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\feedback\FeedbackDialog.tsx   | TypeScript JSX     |        286 |          7 |         29 |        322 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\Header.tsx             | TypeScript JSX     |        276 |          2 |         19 |        297 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\Sidebar.tsx            | TypeScript JSX     |        106 |         11 |          7 |        124 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\layout\UserNav.tsx            | TypeScript JSX     |        266 |          3 |         15 |        284 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\providers\dialog-provider.tsx | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-editor\EditorTabs.tsx     | TypeScript JSX     |        284 |         23 |         37 |        344 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-export-modal.tsx          | TypeScript JSX     |        274 |         18 |         29 |        321 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-preview-modal.tsx         | TypeScript JSX     |        199 |         12 |         16 |        227 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-preview.tsx               | TypeScript JSX     |         57 |          4 |         11 |         72 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg-showcase.tsx              | TypeScript JSX     |        106 |          3 |         11 |        120 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\svg\editor\CodeEditor.tsx     | TypeScript JSX     |         28 |          0 |          4 |         32 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\theme-provider.tsx            | TypeScript JSX     |         16 |          0 |          2 |         18 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\theme-toggle.tsx              | TypeScript JSX     |         36 |          0 |          4 |         40 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\alert-dialog.tsx           | TypeScript JSX     |        124 |          0 |         14 |        138 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\alert.tsx                  | TypeScript JSX     |         53 |          0 |          7 |         60 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\avatar.tsx                 | TypeScript JSX     |         44 |          0 |          6 |         50 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\badge.tsx                  | TypeScript JSX     |         31 |          0 |          6 |         37 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\button.tsx                 | TypeScript JSX     |         51 |          0 |          6 |         57 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\card.tsx                   | TypeScript JSX     |         71 |          0 |          9 |         80 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\checkbox.tsx               | TypeScript JSX     |         26 |          0 |          5 |         31 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\custom-alert.tsx           | TypeScript JSX     |         31 |          0 |          4 |         35 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\dialog.tsx                 | TypeScript JSX     |        109 |          0 |         13 |        122 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\dropdown-menu.tsx          | TypeScript JSX     |        182 |          0 |         18 |        200 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\input.tsx                  | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\label.tsx                  | TypeScript JSX     |         21 |          0 |          6 |         27 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\modal-alert.tsx            | TypeScript JSX     |         90 |          4 |          7 |        101 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\pagination.tsx             | TypeScript JSX     |        111 |          0 |         10 |        121 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\popover.tsx                | TypeScript JSX     |         25 |          0 |          6 |         31 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\radio-group.tsx            | TypeScript JSX     |         39 |          0 |          6 |         45 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\scroll-area.tsx            | TypeScript JSX     |         43 |          0 |          5 |         48 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\select.tsx                 | TypeScript JSX     |        109 |          0 |         12 |        121 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\separator.tsx              | TypeScript JSX     |         27 |          0 |          4 |         31 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\skeleton.tsx               | TypeScript JSX     |         13 |          0 |          3 |         16 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\slider.tsx                 | TypeScript JSX     |         24 |          0 |          4 |         28 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\switch.tsx                 | TypeScript JSX     |         34 |          0 |          3 |         37 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\table.tsx                  | TypeScript JSX     |        107 |          0 |         11 |        118 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\tabs.tsx                   | TypeScript JSX     |         48 |          0 |          8 |         56 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\textarea.tsx               | TypeScript JSX     |         20 |          0 |          5 |         25 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\toast.tsx                  | TypeScript JSX     |        115 |          0 |         12 |        127 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\toaster.tsx                | TypeScript JSX     |         35 |          0 |          3 |         38 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\tooltip.tsx                | TypeScript JSX     |         23 |          0 |          8 |         31 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\components\ui\use-toast.ts               | TypeScript         |        159 |          2 |         30 |        191 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\config\ai-models.ts                      | TypeScript         |         45 |          0 |          1 |         46 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\config\prompts.ts                        | TypeScript         |         34 |          0 |          8 |         42 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\config\site.ts                           | TypeScript         |         10 |          0 |          0 |         10 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\data\user.ts                             | TypeScript         |         42 |          0 |          2 |         44 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-auth-guard.ts                  | TypeScript         |         20 |          0 |          4 |         24 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-media-query.ts                 | TypeScript         |         14 |          0 |          3 |         17 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\hooks\use-svg.ts                         | TypeScript         |         14 |          2 |          4 |         20 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth-utils.ts                        | TypeScript         |         31 |          2 |          6 |         39 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth.config.ts                       | TypeScript         |         23 |          3 |          1 |         27 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth.ts                              | TypeScript         |         60 |          0 |          9 |         69 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\auth\session.ts                      | TypeScript         |          4 |          0 |          1 |          5 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\db-utils.ts                          | TypeScript         |         98 |          6 |         10 |        114 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\db.ts                                | TypeScript         |          6 |          0 |          3 |          9 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\db\schema.ts                         | TypeScript         |         12 |          0 |          1 |         13 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\llm-config.ts                        | TypeScript         |         14 |          1 |          1 |         16 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\logger.ts                            | TypeScript         |         26 |          3 |          4 |         33 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\memory.ts                            | TypeScript         |         18 |          3 |          3 |         24 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\prompt.ts                     | TypeScript         |         42 |          3 |          7 |         52 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\svg.ts                        | TypeScript         |         73 |          6 |         14 |         93 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\models\user.ts                       | TypeScript         |         39 |          4 |          8 |         51 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\prisma.ts                            | TypeScript         |         13 |          0 |          6 |         19 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\lib\utils.ts                             | TypeScript         |          5 |          0 |          2 |          7 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\main\java\config\SwaggerConfig.java      | Java               |         30 |          0 |          3 |         33 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\middleware.ts                            | TypeScript         |         62 |          5 |         10 |         77 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\pages\_app.tsx                           | TypeScript JSX     |          7 |          0 |          2 |          9 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\pages\api-docs.tsx                       | TypeScript JSX     |         21 |          1 |          4 |         26 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\pages\api\users.ts                       | TypeScript         |         12 |         26 |          1 |         39 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\providers\theme-provider.tsx             | TypeScript JSX     |         14 |          0 |          5 |         19 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\routes\example.js                        | JavaScript         |          5 |         28 |          2 |         35 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\schemas\index.ts                         | TypeScript         |         20 |          0 |          2 |         22 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\services\svg\generator.ts                | TypeScript         |         13 |          1 |          3 |         17 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\store\editor.ts                          | TypeScript         |         56 |          0 |          7 |         63 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\styles\feedback-dialog.css               | CSS                |         16 |          0 |          2 |         18 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\styles\swagger-ui.css                    | CSS                |          3 |          0 |          0 |          3 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\swagger.js                               | JavaScript         |        510 |          0 |          2 |        512 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\types\database.ts                        | TypeScript         |         35 |          2 |          3 |         40 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\types\environment.d.ts                   | TypeScript         |         14 |          0 |          1 |         15 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\types\next-auth.d.ts                     | TypeScript         |         21 |          0 |          3 |         24 |
+| h:\cursor\for_fun\genarate-svg - vercel\src\types\svg.ts                             | TypeScript         |         17 |          0 |          1 |         18 |
+| h:\cursor\for_fun\genarate-svg - vercel\tailwind.config.ts                           | TypeScript         |         78 |          0 |          2 |         80 |
+| h:\cursor\for_fun\genarate-svg - vercel\tsconfig.json                                | JSON with Comments |         45 |          0 |          1 |         46 |
+| h:\cursor\for_fun\genarate-svg - vercel\types\next-auth.d.ts                         | TypeScript         |         22 |          0 |          3 |         25 |
+| Total                                                                                |                    |     29,984 |      1,752 |      1,590 |     33,326 |
++--------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

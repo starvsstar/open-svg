@@ -1,0 +1,445 @@
+name: Performance Monitoring
+
+on:
+  schedule:
+    # Run performance tests daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to test'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
+        - staging
+      test_duration:
+        description: 'Test duration in minutes'
+        required: false
+        default: '10'
+        type: string
+
+jobs:
+  performance-baseline:
+    name: Performance Baseline Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run performance baseline tests
+      run: npm run test:performance
+      env:
+        NODE_ENV: test
+        
+    - name: Generate performance report
+      run: |
+        mkdir -p performance-reports
+        node -e "
+        const fs = require('fs');
+        const report = {
+          timestamp: new Date().toISOString(),
+          environment: '${{ github.event.inputs.environment || 'production' }}',
+          commit: '${{ github.sha }}',
+          branch: '${{ github.ref_name }}',
+          results: 'Performance tests completed successfully'
+        };
+        fs.writeFileSync('performance-reports/baseline-report.json', JSON.stringify(report, null, 2));
+        "
+        
+    - name: Upload performance report
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-baseline-report
+        path: performance-reports/
+        retention-days: 30
+
+  lighthouse-audit:
+    name: Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        url:
+          - 'https://your-app.vercel.app'
+          - 'https://your-app.vercel.app/editor'
+        device:
+          - 'desktop'
+          - 'mobile'
+          
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        
+    - name: Install Lighthouse CI
+      run: npm install -g @lhci/cli@0.12.x
+      
+    - name: Run Lighthouse audit
+      run: |
+        lhci autorun \
+          --collect.url="${{ matrix.url }}" \
+          --collect.settings.preset="${{ matrix.device }}" \
+          --collect.numberOfRuns=3 \
+          --assert.assertions.categories:performance=0.8 \
+          --assert.assertions.categories:accessibility=0.9 \
+          --assert.assertions.categories:best-practices=0.9 \
+          --upload.target=temporary-public-storage
+          
+    - name: Save Lighthouse results
+      run: |
+        mkdir -p lighthouse-reports
+        cp .lighthouseci/reports/* lighthouse-reports/ || true
+        
+    - name: Upload Lighthouse report
+      uses: actions/upload-artifact@v3
+      with:
+        name: lighthouse-report-${{ matrix.device }}-${{ strategy.job-index }}
+        path: lighthouse-reports/
+        retention-days: 30
+
+  load-testing:
+    name: Load Testing
+    runs-on: ubuntu-latest
+    if: github.event.inputs.environment == 'production' || github.event_name == 'schedule'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install Artillery
+      run: npm install -g artillery@latest
+      
+    - name: Create load test configuration
+      run: |
+        cat > load-test.yml << EOF
+        config:
+          target: 'https://your-app.vercel.app'
+          phases:
+            - duration: ${{ github.event.inputs.test_duration || '10' }}m
+              arrivalRate: 5
+              name: "Warm up"
+            - duration: ${{ github.event.inputs.test_duration || '10' }}m
+              arrivalRate: 10
+              name: "Ramp up load"
+            - duration: ${{ github.event.inputs.test_duration || '10' }}m
+              arrivalRate: 15
+              name: "Sustained load"
+          processor: "./load-test-processor.js"
+        scenarios:
+          - name: "Load SVG Editor"
+            weight: 70
+            flow:
+              - get:
+                  url: "/"
+              - think: 2
+              - get:
+                  url: "/editor"
+              - think: 5
+          - name: "Create and Edit SVG"
+            weight: 30
+            flow:
+              - get:
+                  url: "/editor"
+              - think: 3
+              - post:
+                  url: "/api/svg/create"
+                  json:
+                    type: "rectangle"
+                    x: 100
+                    y: 100
+                    width: 200
+                    height: 150
+              - think: 2
+        EOF
+        
+    - name: Create load test processor
+      run: |
+        cat > load-test-processor.js << 'EOF'
+        module.exports = {
+          setRandomCoordinates: function(requestParams, context, ee, next) {
+            context.vars.x = Math.floor(Math.random() * 800);
+            context.vars.y = Math.floor(Math.random() * 600);
+            context.vars.width = Math.floor(Math.random() * 200) + 50;
+            context.vars.height = Math.floor(Math.random() * 200) + 50;
+            return next();
+          }
+        };
+        EOF
+        
+    - name: Run load test
+      run: |
+        artillery run load-test.yml --output load-test-results.json
+        artillery report load-test-results.json --output load-test-report.html
+        
+    - name: Upload load test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: load-test-results
+        path: |
+          load-test-results.json
+          load-test-report.html
+        retention-days: 30
+
+  memory-profiling:
+    name: Memory Profiling
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install Puppeteer
+      run: npm install puppeteer
+      
+    - name: Create memory profiling script
+      run: |
+        cat > memory-profile.js << 'EOF'
+        const puppeteer = require('puppeteer');
+        const fs = require('fs');
+        
+        async function profileMemory() {
+          const browser = await puppeteer.launch({
+            headless: true,
+            args: ['--no-sandbox', '--disable-dev-shm-usage']
+          });
+          
+          const page = await browser.newPage();
+          
+          // Enable runtime domain to collect memory metrics
+          const client = await page.target().createCDPSession();
+          await client.send('Runtime.enable');
+          
+          const memoryMetrics = [];
+          
+          // Navigate to the application
+          await page.goto('http://localhost:3000/editor', { waitUntil: 'networkidle0' });
+          
+          // Collect initial memory metrics
+          let metrics = await client.send('Runtime.getHeapUsage');
+          memoryMetrics.push({ timestamp: Date.now(), ...metrics });
+          
+          // Simulate user interactions
+          for (let i = 0; i < 50; i++) {
+            // Create rectangles
+            await page.click('[data-testid="tool-rectangle"]');
+            await page.mouse.click(100 + i * 10, 100 + i * 5);
+            await page.mouse.move(200 + i * 10, 200 + i * 5);
+            await page.mouse.click(200 + i * 10, 200 + i * 5);
+            
+            // Collect memory metrics every 10 iterations
+            if (i % 10 === 0) {
+              metrics = await client.send('Runtime.getHeapUsage');
+              memoryMetrics.push({ timestamp: Date.now(), iteration: i, ...metrics });
+            }
+            
+            await page.waitForTimeout(100);
+          }
+          
+          // Force garbage collection
+          await client.send('Runtime.collectGarbage');
+          
+          // Final memory metrics
+          metrics = await client.send('Runtime.getHeapUsage');
+          memoryMetrics.push({ timestamp: Date.now(), final: true, ...metrics });
+          
+          // Save results
+          fs.writeFileSync('memory-profile-results.json', JSON.stringify({
+            testDuration: Date.now() - memoryMetrics[0].timestamp,
+            metrics: memoryMetrics,
+            summary: {
+              initialHeapUsed: memoryMetrics[0].usedSize,
+              finalHeapUsed: memoryMetrics[memoryMetrics.length - 1].usedSize,
+              peakHeapUsed: Math.max(...memoryMetrics.map(m => m.usedSize)),
+              memoryLeak: memoryMetrics[memoryMetrics.length - 1].usedSize > memoryMetrics[0].usedSize * 1.5
+            }
+          }, null, 2));
+          
+          await browser.close();
+        }
+        
+        profileMemory().catch(console.error);
+        EOF
+        
+    - name: Build and start application
+      run: |
+        npm run build
+        npm start &
+        sleep 30  # Wait for server to start
+        
+    - name: Run memory profiling
+      run: node memory-profile.js
+      
+    - name: Upload memory profile results
+      uses: actions/upload-artifact@v3
+      with:
+        name: memory-profile-results
+        path: memory-profile-results.json
+        retention-days: 30
+
+  performance-regression:
+    name: Performance Regression Detection
+    runs-on: ubuntu-latest
+    needs: [performance-baseline, lighthouse-audit]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Download baseline results
+      uses: actions/download-artifact@v3
+      with:
+        name: performance-baseline-report
+        path: current-results/
+        
+    - name: Download previous results
+      uses: actions/download-artifact@v3
+      continue-on-error: true
+      with:
+        name: performance-baseline-report
+        path: previous-results/
+        
+    - name: Compare performance results
+      run: |
+        cat > compare-performance.js << 'EOF'
+        const fs = require('fs');
+        
+        function compareResults() {
+          try {
+            const currentPath = 'current-results/baseline-report.json';
+            const previousPath = 'previous-results/baseline-report.json';
+            
+            if (!fs.existsSync(currentPath)) {
+              console.log('No current results found');
+              return;
+            }
+            
+            const current = JSON.parse(fs.readFileSync(currentPath, 'utf8'));
+            
+            if (!fs.existsSync(previousPath)) {
+              console.log('No previous results found for comparison');
+              return;
+            }
+            
+            const previous = JSON.parse(fs.readFileSync(previousPath, 'utf8'));
+            
+            const comparison = {
+              timestamp: new Date().toISOString(),
+              current: current,
+              previous: previous,
+              regression: false,
+              improvements: [],
+              regressions: []
+            };
+            
+            // Add your performance comparison logic here
+            console.log('Performance comparison completed');
+            console.log(JSON.stringify(comparison, null, 2));
+            
+            fs.writeFileSync('performance-comparison.json', JSON.stringify(comparison, null, 2));
+          } catch (error) {
+            console.error('Error comparing performance results:', error);
+          }
+        }
+        
+        compareResults();
+        EOF
+        
+        node compare-performance.js
+        
+    - name: Upload comparison results
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-comparison
+        path: performance-comparison.json
+        retention-days: 30
+
+  notify-results:
+    name: Notify Performance Results
+    runs-on: ubuntu-latest
+    needs: [performance-baseline, lighthouse-audit, load-testing, memory-profiling, performance-regression]
+    if: always()
+    
+    steps:
+    - name: Create performance summary
+      run: |
+        cat > performance-summary.md << 'EOF'
+        # Performance Monitoring Report
+        
+        **Date:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        **Environment:** ${{ github.event.inputs.environment || 'production' }}
+        **Commit:** ${{ github.sha }}
+        **Branch:** ${{ github.ref_name }}
+        
+        ## Test Results
+        
+        - **Baseline Tests:** ${{ needs.performance-baseline.result }}
+        - **Lighthouse Audit:** ${{ needs.lighthouse-audit.result }}
+        - **Load Testing:** ${{ needs.load-testing.result }}
+        - **Memory Profiling:** ${{ needs.memory-profiling.result }}
+        - **Regression Detection:** ${{ needs.performance-regression.result }}
+        
+        ## Actions
+        
+        - View detailed results in the [GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+        - Download artifacts for detailed analysis
+        
+        EOF
+        
+    - name: Notify team on Slack
+      if: github.event_name == 'schedule' || github.event.inputs.environment == 'production'
+      uses: 8398a7/action-slack@v3
+      with:
+        status: custom
+        custom_payload: |
+          {
+            text: "Performance Monitoring Report",
+            attachments: [{
+              color: "${{ contains(needs.*.result, 'failure') && 'danger' || 'good' }}",
+              fields: [
+                {
+                  title: "Environment",
+                  value: "${{ github.event.inputs.environment || 'production' }}",
+                  short: true
+                },
+                {
+                  title: "Status",
+                  value: "${{ contains(needs.*.result, 'failure') && 'Some tests failed' || 'All tests passed' }}",
+                  short: true
+                },
+                {
+                  title: "View Results",
+                  value: "<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|

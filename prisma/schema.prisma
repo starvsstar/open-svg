@@ -1,0 +1,232 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Feedback {
+  id         String   @id
+  content    String
+  status     String   @default("pending")
+  created_at DateTime @default(now())
+  updated_at DateTime
+  user_id    String?
+  users      users?   @relation(fields: [user_id], references: [id])
+
+  @@index([user_id])
+}
+
+model official_svgs {
+  id          String   @id
+  title       String
+  description String?
+  svg_content String
+  category    String   @default("uncategorized")
+  status      String   @default("draft")
+  is_public   Boolean  @default(true)
+  usage_count Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime
+}
+
+model prompt_favorites {
+  user_id          String
+  template_id      String
+  created_at       DateTime         @default(now())
+  prompt_templates prompt_templates @relation(fields: [template_id], references: [id])
+  users            users            @relation(fields: [user_id], references: [id])
+
+  @@id([user_id, template_id])
+}
+
+model prompt_history {
+  id                               String       @id
+  user_id                          String
+  content                          String
+  svg_id                           String?
+  status                           PromptStatus
+  error_message                    String?
+  created_at                       DateTime     @default(now())
+  svgs_prompt_history_svg_idTosvgs svgs?        @relation("prompt_history_svg_idTosvgs", fields: [svg_id], references: [id])
+  users                            users        @relation(fields: [user_id], references: [id])
+  svgs_PromptToResultSvgs          svgs[]       @relation("PromptToResultSvgs")
+}
+
+model prompt_templates {
+  id               String             @id
+  title            String
+  content          String
+  description      String?
+  is_public        Boolean            @default(false)
+  created_by       String
+  like_count       Int                @default(0)
+  use_count        Int                @default(0)
+  created_at       DateTime           @default(now())
+  updated_at       DateTime
+  prompt_favorites prompt_favorites[]
+  users            users              @relation(fields: [created_by], references: [id])
+}
+
+model svg_comments {
+  id         String   @id
+  svg_id     String
+  user_id    String
+  content    String
+  created_at DateTime @default(now())
+  updated_at DateTime
+  svgs       svgs     @relation(fields: [svg_id], references: [id])
+  users      users    @relation(fields: [user_id], references: [id])
+}
+
+model svg_favorites {
+  svg_id     String
+  user_id    String
+  created_at DateTime @default(now())
+  svgs       svgs     @relation(fields: [svg_id], references: [id])
+  users      users    @relation(fields: [user_id], references: [id])
+
+  @@id([svg_id, user_id])
+}
+
+model svg_forwards {
+  id                                      String   @id
+  original_svg_id                         String
+  new_svg_id                              String
+  user_id                                 String
+  created_at                              DateTime @default(now())
+  svgs_svg_forwards_new_svg_idTosvgs      svgs     @relation("svg_forwards_new_svg_idTosvgs", fields: [new_svg_id], references: [id])
+  svgs_svg_forwards_original_svg_idTosvgs svgs     @relation("svg_forwards_original_svg_idTosvgs", fields: [original_svg_id], references: [id])
+  users                                   users    @relation(fields: [user_id], references: [id])
+}
+
+model svg_likes {
+  svg_id     String
+  user_id    String
+  created_at DateTime @default(now())
+  svgs       svgs     @relation(fields: [svg_id], references: [id])
+  users      users    @relation(fields: [user_id], references: [id])
+
+  @@id([svg_id, user_id])
+}
+
+model svg_shares {
+  id         String    @id
+  svg_id     String
+  user_id    String
+  share_type ShareType
+  platform   String?
+  created_at DateTime  @default(now())
+  svgs       svgs      @relation(fields: [svg_id], references: [id])
+  users      users     @relation(fields: [user_id], references: [id])
+}
+
+model svg_tags {
+  svg_id String
+  tag_id String
+  svgs   svgs   @relation(fields: [svg_id], references: [id])
+  tags   tags   @relation(fields: [tag_id], references: [id])
+
+  @@id([svg_id, tag_id])
+}
+
+model svg_versions {
+  id                 String   @id
+  svg_id             String
+  svg_content        String
+  prompt             String?
+  version_number     Int
+  change_description String?
+  created_at         DateTime @default(now())
+  created_by         String
+  users              users    @relation(fields: [created_by], references: [id])
+  svgs               svgs     @relation(fields: [svg_id], references: [id])
+}
+
+model svgs {
+  id                                              String           @id
+  user_id                                         String?
+  title                                           String
+  description                                     String?
+  svg_content                                     String
+  prompt_id                                       String?
+  is_public                                       Boolean          @default(false)
+  is_official                                     Boolean          @default(false)
+  view_count                                      Int              @default(0)
+  like_count                                      Int              @default(0)
+  share_count                                     Int              @default(0)
+  favorite_count                                  Int              @default(0)
+  forward_count                                   Int              @default(0)
+  created_at                                      DateTime         @default(now())
+  updated_at                                      DateTime
+  prompt_history_prompt_history_svg_idTosvgs      prompt_history[] @relation("prompt_history_svg_idTosvgs")
+  svg_comments                                    svg_comments[]
+  svg_favorites                                   svg_favorites[]
+  svg_forwards_svg_forwards_new_svg_idTosvgs      svg_forwards[]   @relation("svg_forwards_new_svg_idTosvgs")
+  svg_forwards_svg_forwards_original_svg_idTosvgs svg_forwards[]   @relation("svg_forwards_original_svg_idTosvgs")
+  svg_likes                                       svg_likes[]
+  svg_shares                                      svg_shares[]
+  svg_tags                                        svg_tags[]
+  svg_versions                                    svg_versions[]
+  users                                           users?           @relation(fields: [user_id], references: [id])
+  prompt_history_PromptToResultSvgs               prompt_history[] @relation("PromptToResultSvgs")
+}
+
+model tags {
+  id       String     @id
+  name     String     @unique
+  svg_tags svg_tags[]
+}
+
+model users {
+  id               String             @id
+  email            String             @unique
+  name             String
+  password_hash    String
+  avatar_url       String?
+  status           UserStatus         @default(active)
+  role             UserRole           @default(USER)
+  created_at       DateTime           @default(now())
+  updated_at       DateTime
+  Feedback         Feedback[]
+  prompt_favorites prompt_favorites[]
+  prompt_history   prompt_history[]
+  prompt_templates prompt_templates[]
+  svg_comments     svg_comments[]
+  svg_favorites    svg_favorites[]
+  svg_forwards     svg_forwards[]
+  svg_likes        svg_likes[]
+  svg_shares       svg_shares[]
+  svg_versions     svg_versions[]
+  svgs             svgs[]
+}
+
+enum FeedbackStatus {
+  pending
+  in_progress
+  completed
+  rejected
+}
+
+enum PromptStatus {
+  success
+  failed
+}
+
+enum ShareType {
+  social
+  link
+  embed
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum UserStatus {
+  active
+  inactive
+}

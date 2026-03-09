@@ -1,0 +1,562 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义动画 */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes scale-x {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes tilt {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+/* 动画类 */
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-scale-x {
+  animation: scale-x 1s ease-out forwards;
+}
+
+.animate-tilt {
+  animation: tilt 10s infinite linear;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+/* 动画延迟类 */
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --selection-color: #2196F3;
+    --selection-shadow: rgba(33, 150, 243, 0.5);
+    --selection-point-fill: #2196F3;
+    --selection-point-stroke: #ffffff;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --selection-color: #64B5F6;
+    --selection-shadow: rgba(100, 181, 246, 0.6);
+    --selection-point-fill: #64B5F6;
+    --selection-point-stroke: #333333;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-1px); }
+  20%, 40%, 60%, 80% { transform: translateX(1px); }
+}
+
+.animate-shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgb(226 232 240 / 0.3) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-grid-white {
+  background-image: linear-gradient(to right, rgb(255 255 255 / 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin; /* Firefox */
+    
+    /* Webkit (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+      width: 16px;
+      height: 16px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      margin: 3px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: hsl(var(--muted-foreground) / 0.15);
+      border: 4px solid transparent;
+      border-radius: 9999px;
+      background-clip: padding-box;
+      min-height: 40px;
+    }
+    
+    /* 容器悬停时的滚动条 */
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: hsl(var(--muted-foreground) / 0.25);
+    }
+    
+    /* 滚动条悬停时 */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: hsl(var(--muted-foreground) / 0.35);
+      border: 3px solid transparent;
+    }
+    
+    /* 滚动条激活时 */
+    &::-webkit-scrollbar-thumb:active {
+      background-color: hsl(var(--muted-foreground) / 0.45);
+      border: 3px solid transparent;
+    }
+    
+    /* 深色主题 */
+    .dark & {
+      &::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--muted-foreground) / 0.2);
+      }
+      
+      &:hover::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--muted-foreground) / 0.3);
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: hsl(var(--muted-foreground) / 0.4);
+      }
+      
+      &::-webkit-scrollbar-thumb:active {
+        background-color: hsl(var(--muted-foreground) / 0.5);
+      }
+    }
+  }
+  
+  .bg-apple-gradient {
+    background: linear-gradient(
+      180deg,
+      rgb(var(--background)) 0%,
+      rgb(var(--blue-50) / 0.1) 30%,
+      rgb(var(--background)) 70%
+    );
+  }
+  
+  .backdrop-blur-apple {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 2rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* 添加平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 优化字体渲染 */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 自定义动画 */
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* 网格背景样式 */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* 玻璃态效果 */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 响应式动画控制 */
+@media (prefers-reduced-motion: reduce) {
+  .animate-gradient-x,
+  .animate-float,
+  .animate-pulse-glow,
+  .animate-shimmer,
+  .animate-scroll,
+  .animate-pulse {
+    animation: none;
+  }
+  
+  /* 保留基本的hover效果但移除动画 */
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  .hover\:-translate-y-1:hover,
+  .hover\:-translate-y-2:hover {
+    transform: none;
+  }
+}
+
+/* 性能优化 */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* 优化动画性能 */
+.animate-pulse,
+.animate-gradient-x,
+.animate-float {
+  will-change: transform, opacity;
+}
+
+/* 减少重绘和回流 */
+.backdrop-blur-xl,
+.backdrop-blur-sm {
+  will-change: backdrop-filter;
+}
+
+/* 优化滚动性能 */
+.overflow-hidden {
+  contain: layout style paint;
+}
+
+/* GPU加速的变换 */
+.hover\:scale-105:hover,
+.hover\:scale-110:hover {
+  transform: scale3d(1.05, 1.05, 1) translateZ(0);
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translate3d(0, -0.25rem, 0);
+}
+
+.hover\:-translate-y-2:hover {
+  transform: translate3d(0, -0.5rem, 0);
+}
+
+/* 自定义滚动条 */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+}
+
+/* 添加微妙的动画 */
+.hover-scale {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* SVG 选择框样式 */
+.svg-select-box {
+  fill: var(--selection-shadow);
+  stroke: var(--selection-color);
+  stroke-width: 2px;
+  stroke-dasharray: 5,5;
+  pointer-events: none;
+}
+
+.svg-select-points circle {
+  fill: var(--selection-point-fill);
+  stroke: var(--selection-point-stroke);
+  stroke-width: 2px;
+  r: 6px !important; /* 强制设置更大的控制点 */
+}
+
+/* 活动元素高亮 */
+.active-element {
+  stroke: #2196F3 !important;
+  stroke-width: 2px !important;
+  stroke-dasharray: 5,5 !important;
+}
+
+/* 选中元素样式 - 明显的高亮 */
+.svg-selected-element {
+  filter: drop-shadow(0 0 3px rgba(33, 150, 243, 0.7)) !important;
+}
+
+/* 选择轮廓样式 */
+.selection-outline {
+  stroke: var(--selection-color);
+  stroke-width: 2.5px;
+  stroke-dasharray: 7,5;
+  fill: transparent;
+  pointer-events: none;
+  stroke-linecap: round;
+  animation: dashOffset 30s linear infinite;
+}
+
+/* 动画效果让虚线边框动起来 */
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
+/* 增强SVG元素的hover效果 */
+svg [data-layer-id]:hover {
+  cursor: pointer;
+  filter: brightness(1.1) drop-shadow(0 0 4px rgba(33, 150, 243, 0.4));
+  transition: all 0.2s ease-in-out;
+}
+
+/* 统一的按钮悬停效果 */
+.icon-button {
+  border-radius: 6px;
+  padding: 6px;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon-button:hover {
+  background-color: rgb(var(--primary) / 0.9);
+  color: rgb(var(--primary-foreground));
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 移除tool-button的单独样式，使用统一样式 */
+.tool-button {
+  /* 这个可以删除，因为我们现在使用icon-button */
+}
+
+/* 更明显的控制点hover效果 */
+.svg-select-points circle:hover {
+  r: 8px !important;
+  fill: #ff5722 !important;
+  stroke-width: 3px !important;
+  transition: all 0.2s ease;
+}
+
+/* 隐藏滚动条 */
+.scrollbar-hide {
+  /* Firefox */
+  scrollbar-width: none;
+  
+  /* Safari and Chrome */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}
